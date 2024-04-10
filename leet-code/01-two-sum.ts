@@ -3,7 +3,6 @@ function twoSum(numbers: number[], target: number): number[] {
     const number1 = numbers[index1];
 
     for (let index2 = index1 + 1; index2 < numbers.length; index2++) {
-      console.count('Contador');
       const number2 = numbers[index2];
       if (number1 + number2 === target) {
         return [index1, index2];
@@ -12,7 +11,7 @@ function twoSum(numbers: number[], target: number): number[] {
   }
 }
 
-const caso1 = [15, 11, 2, 7];
+const case1 = [15, 11, 2, 7];
 const target1 = 9;
 
-console.log(twoSum(caso1, target1));
+console.log(twoSum(case1, target1));
